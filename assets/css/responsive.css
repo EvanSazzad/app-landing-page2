@@ -1,0 +1,332 @@
+/*======= larger devices (1400px and up) =======*/
+@media (min-width:1400px){
+    header{
+        padding: 0 14rem;
+    }
+    .container{
+        max-width: 1360px;
+    }
+}
+
+@media (max-width: 1200px){
+    header{
+        padding: 0 4rem;
+    }
+    .container{
+        max-width: 991px;
+    }
+    .sm-container{
+        max-width: 950px;
+    }
+
+    /*=============== hero area ==============*/
+    .hero-img{
+        margin-left: 15rem;
+        width: 35rem;
+    }
+    .hero-bottom {
+        margin-top: -15rem;
+    }
+
+}
+
+
+
+@media (max-width: 991px){
+    html{
+        font-size: 56.25%;
+    }
+    header{
+        position: relative;
+    }
+    .header-wrapper{
+        padding: 2rem 0;
+    }
+    .container{
+        max-width: 768px;
+    }
+    .sm-container{
+        max-width: 740px;
+    }
+.primary_nav{
+        background-color: #fff;
+        height: 100vh;
+        background-color: #ffffff;
+        box-shadow: 0 10px 25px 0 rgba(0,0,0,.2);
+        position: absolute;
+        display: block;
+        right: -4rem;
+        top: 0;
+        z-index: 9;   
+        opacity: 0;
+        transform: translateX(100%);
+        visibility: hidden;
+        transition: all .3s linear;
+    }
+    .primary_nav.active{
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+    .primary_nav ul{
+        flex-direction: column;
+        place-items: center;
+        margin-top: 10rem;
+        display: block;
+    }
+    .primary_nav ul li{
+        padding: 2rem 6rem;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        text-align: center;
+    }
+    .nav-button-holder{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .primary_nav .btn{
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+    .hamburger-menu{
+        display: block;
+        z-index: 99;
+    }
+    .hamburger-menu .close{
+        display: none;
+    }
+    .hamburger-menu.active > .close{
+        display: block;
+        position: absolute;
+        top: 2.5rem;
+        right: 0;
+    }
+    .hamburger-menu.active > .menu{
+        display: none;
+    }
+
+
+    /*=============== hero area ==============*/
+    .hero-wrapper{
+        padding: 0;
+    }
+    .hero-img{
+        width: 35rem;
+        margin-left: 10rem;
+    }
+    .hero-bottom{
+        margin-top: -10rem;
+    }
+
+
+    /*=============== companies area ==============*/
+    .pt-112{
+        padding-top: 8rem;
+    }
+    .companies-holder img{
+        max-width: 12rem;
+    }
+
+    /*=============== features area ==============*/
+    .pr-100{
+        padding-right: 0;
+    }
+    .icon-holder{
+        padding: 1rem;
+    }
+    .icon-holder img{
+        width: 4.5rem;
+    }
+    .features-wrapper{
+        padding-top: 5rem;
+        align-items: flex-start;
+    }
+    .features-img-holder img{
+        width: 35rem;
+    }
+    .features-tt{
+        margin-top: 15rem;
+    }
+    .features-menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: absolute;
+        left: 0;
+        margin-top: 25rem;
+        align-items: center;
+    }
+    .features-menu li{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .features-menu li:nth-child(1) {
+        margin-top: 0;
+    }
+
+
+    /*=============== jackpot area ==============*/
+    .jackpot-wrapper{
+        margin-top: 26rem;
+    }
+    .jackpot-tt {
+        margin-right: 4rem;
+    }
+}
+
+
+@media (max-width: 767px){
+    .container{
+        max-width: 576px;
+    }
+    .sm-container{
+        max-width: 576px;
+    }
+    html{
+        font-size: 50%;
+    }
+    /*=============== hero area ==============*/
+    .hero-title {
+        font-size: 4rem;
+    }
+    .hero-sub-tt{
+        margin-top: 10rem;
+        height: 3rem;
+        width: 34rem;
+    }
+    .hero-sub-tt .img-holder {
+        width: 3.5rem;
+        height: 3rem;
+    }
+    .hero-img{
+        width: 30rem;
+        margin-left: 5rem;
+    }
+
+    /*=============== features area ==============*/
+    .features-menu{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 22rem;
+    }
+
+    /*=============== jackpot area ==============*/
+    .jackpot-wrapper {
+        margin-top: 48rem;
+    }
+    .jackpot-content {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 575px){
+    html{
+        font-size: 45.5%;
+    }
+    .sm-container,
+    .container{
+        max-width: 100%;
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
+		margin-left: auto;
+		margin-right: auto;
+    }
+    header{
+        padding: 0 1.6rem;
+    }
+    .btn{
+        padding: 1.5rem 3rem;
+    }
+
+    /*=============== companies area ==============*/
+    .companies-holder{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .companies-holder li{
+        margin-top: 1rem;
+    }
+
+
+    /*=============== jackpot area ==============*/
+    .jackpot-wrapper {
+        margin-top: 50rem;
+    }
+    .jackpot-tt{
+        font-size: 3rem;
+    }
+    .top-side {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 480px){
+    .hero-wrapper{
+        display: grid;
+    }
+    .right-img{
+        display: none;
+    }
+    .hero-bottom {
+        margin-top: -3rem;
+    }
+    .hero-sub-tt{
+        width: 30rem;
+    }
+    .hero-sub-tt .sub-tt{
+        font-size: 1.6rem;
+    }
+
+    /*=============== features wrapper ==============*/
+    .features-img-holder img{
+        display: none;
+    }
+    .features-wrapper{
+        display: block;
+    }
+    .features-tt {
+        margin-top: 5rem;
+    }
+    .features-menu{
+        position: relative;
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+    }
+    .features-menu li{
+        margin-bottom: 3rem;
+    }
+    .icon-holder img {
+        width: 3.5rem;
+    }
+
+
+    /*=============== jackpot area ==============*/
+    .jackpot-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*=============== designed area ==============*/
+    .designed-wrapper {
+        display: grid;
+        gap: 4rem;
+    }
+    .designed-wrapper img{
+        padding: 3rem;
+    }
+    .designed-content {
+        margin: 0;
+    }
+
+    /*=============== choose area  ==============*/
+    .choose-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /*=============== footer area ==============*/
+    .footer-nav {
+        gap: 1rem;
+    }
+}
+
+
